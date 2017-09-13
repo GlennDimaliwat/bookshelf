@@ -32,7 +32,7 @@
 
 <%# <%= image_tag @book.image, width: 250, alt='' %>
 <img width="250" src="<%= @book.image %>" alt="No Photo Provided"/>
-<br/>
+<br/><br/>
 
-<%= link_to 'Edit', edit_book_path(@book) %> |
-<%= link_to 'Back', books_path %>
+<%= link_to 'Edit', edit_book_path(@book), class: 'btn btn-sm btn-primary' %> |
+<%= link_to 'Back', books_path, class: 'btn btn-sm btn-primary' %>
